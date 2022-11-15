@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Input Data KTP</title>
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+                <div class="col-sm-12">
+                    <h2 class="judul" align="center">Data KTP</h2>
+                    <br>
+                    <form action="/view" method="post" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label>Nama</label> 
+                            <input type="text" class="form-control" name="name" placeholder="Masukkan nama">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Tanggal Lahir</label>
+                            <input type="date" class="form-control" name="dateofbirth" placeholder="Masukkan Tanggal Lahir" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Foto</label>
+                            <input type="file" class="form-control" name="photo" placeholder="Masukkan Foto">
+                        </div>
+                        <button type="view" class="btn btn-primary">Kirim</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
