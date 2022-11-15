@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Lihat Data KTP</title>
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+	<div class="container">
+            <div class="col-sm-12">
+                    <hr/>
+                    <h3 align="center">Data KTP</h3>
+                    <hr/>
+                    
+                    <h3>Nama</h3>
+                    <h4 th:text="${data.name}"></h4>
+                            
+                    <h3>Tanggal Lahir</h3>
+                    <h4 th:text="${data.dateofbirth}"></h4>
+                    
+                    <p align="center"><img alt="" th:src="@{'getimage/'+${data.photo}}" width="500"></p>
+            </div>
+	</div>
+    </body>
+</html>
